@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: auto;
+}
+body{
+    min-height: 100vh;
+}
+.navbar{
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.home_navbar{
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+}
+
+.main{
+    display: flex;
+    height: 80vh;
+}
+.font>img{
+    padding-top: 10px;
+    height: 40px;
+    position: relative;
+}
+
+.logo>img{
+    height: 110px;
+    position: flex;
+    
+}
+
+.large-logo{
+    max-width: 40vw;
+    height: 100%;
+    display: flex;
+}
+.large-logo>img{
+    width: 100%
+}
+
+.footer{
+    height: 5vh;
+    background-color: #d4d4d4;
+    display: flex;
+}
+
+.container {
+    padding-top: 10px;
+    display: flex;
+    width: 60vw;
+    max-width: 60vw;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    width: 33.33%;
+    position: absolute;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+    background-color: #d4d4d4;
+    max-height: 500px;
+
+}
+
+.cards:hover:not(.active).left {
+    transform: translateX(-50%) rotate(-20deg) scale(0.9);
+}
+
+.cards:hover:not(.active).right {
+    transform: translateX(50%) rotate(20deg) scale(0.9);
+}
+
+.cards.left {
+    transform: translateX(-50%) scale(0.9);
+}
+
+.cards.right {
+    transform: translateX(50%) scale(0.9);
+}
+
+.cards.active {
+    z-index: 5;
+    position: relative;
+}
+
+.cards__inner {
+    position: relative;
+    height: 500px;
+    flex-direction: column;
+}
+.sign{
+
+    width: 100%;
+    height: 20px;
+}
+
+.signup_title{
+    display: flex;
+    padding: 15px 0;
+    font-family:'Franklin Gothic Medium'
+}
+
+.signup_style{
+    display: flex;
+    padding: 7px 0;
+}
+
+.signup_style>p{
+    width: 25%;
+    text-align: end;
+    font-family:'Franklin Gothic Medium'
+
+}
+
+.signup_style>input{
+    border-radius: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.test>p{
+    text-align: center;
+}
+
+.signup_button>button{
+    display: flex;
+    height: 40px;
+    width: 130px;
+    border-radius: 16px;
+    font-size: 20px;
+    horizontal-align: middle;
+}
+
+.admin_title{
+    display: flex;
+    padding: 15px 0;
+    font-family:'Franklin Gothic Medium'
+}
+
+.admin_style>p{
+    padding-top: px;
+    width: 25%;
+    text-align: end;
+    display: grid;
+    place-items: center;
+    font-family:'Franklin Gothic Medium'
+
+}
+
+.admin_style input[type="text"], .admin_style input[type="password"] {
+    display: grid;
+    place-items: center;
+    border:0;
+    background: none;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.admin_style input[type="text"]:focus, .admin_style input[type="password"]:focus{
+    width: 230px;
+    border-color: #b30404
+}
+
+.admin_button>button{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 16px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: "Helvetica Neue",
+}
+.test>a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.admin_button>button:hover{
+    background-color:#bd0000
+}
+
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+  }
